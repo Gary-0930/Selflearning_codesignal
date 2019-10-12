@@ -2,6 +2,7 @@
 ====
 # 目錄
 >* [Python語法](#Python語法)
+>>** [list語法](#list語法)
 >* [Esclipse(Java)語法](#Esclipse(Java)語法)
 >* [R語言](#R語言)
 >* [C++環境視窗程式設計](#C++環境視窗程式設計)
@@ -10,7 +11,7 @@
 
 ---------------
 ## Python語法
-
+  ### list語法
 -----
 ## Esclipse(Java)語法
 
