@@ -11,8 +11,14 @@
 
 ---------------
 ## Python語法
-### list語法
-li
+### list語法 <br>
+remove用法
+```python
+a = [1, 3, 5, 7]
+a.remove(3)
+a
+```
+
 -----
 ## Esclipse(Java)語法
 
