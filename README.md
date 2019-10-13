@@ -1,7 +1,7 @@
 厲彥伯的GitHub
 ====
 # 目錄
->* [Python語法](#Python語法)
+>* [Python語法](#Python語法)  
     *[list語法](#list語法)
 >* [Esclipse(Java)語法](#Esclipse(Java)語法)
 >* [R語言](#R語言)
