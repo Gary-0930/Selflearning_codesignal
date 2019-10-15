@@ -1,5 +1,5 @@
 厲彥伯的GitHub
-====
+=====
 # 目錄
 >* [Python語法](#Python語法)  
 >   * [list語法](#list語法)
@@ -14,7 +14,7 @@
 
 ---------------
 ## Python語法
-### list語法 <br>
+### list語法 
 
 remove用法
 ```python
@@ -80,6 +80,7 @@ print(list(b1))
 
 ### Numpy套件
 陣列 VS 清單
+
 
 | |Numpy|List|
 |:---:|:---:|:---:|
