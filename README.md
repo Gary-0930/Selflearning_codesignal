@@ -11,6 +11,10 @@
 >* [C++環境視窗程式設計](#C++環境視窗程式設計)
 >* [GitHub使用方法](#GitHub使用方法)
 >* [LeeCode練習筆記](#LeeCode練習筆記)
+>* [HomeWork](#HomeWork)
+>   * [快速排序法](#快速排序法)
+>     * [Quick Sort](#QuickSort)
+>     * [Quick Sort Inplace](#QuickSort_Inplace)
 
 ---------------
 ## Python語法
@@ -109,4 +113,12 @@ print(list(b1))
 
 -----
 ## LeeCode練習筆記
+
+## HomeWork
+
+### 快速排序法
+
+#### QuickSort
+
+#### QuickSort_Inplace
 
