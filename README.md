@@ -126,6 +126,9 @@ print(list(b1))
 3. 遞迴排序子序列：遞迴地將小於基準值元素的子序列和大於基準值元素的子序列排序。<br>
 #### QuickSort
 
+#### QuickSort_Inplace
+
+
 ```python
 def partition(array, begining, end):
     #如果資料長度不足2，認為已經是有序排列
@@ -181,4 +184,3 @@ list_example = [20, 3, 0, 35, 8, 23, 15, 28, 7, 32]
 qs(list_example, 0, 10)
 ```
 
-#### QuickSort_Inplace
