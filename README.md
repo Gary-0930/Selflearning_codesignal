@@ -126,5 +126,59 @@ print(list(b1))
 3. 遞迴排序子序列：遞迴地將小於基準值元素的子序列和大於基準值元素的子序列排序。<br>
 #### QuickSort
 
-#### QuickSort_Inplace
+```python
+def partition(array, begining, end):
+    #如果資料長度不足2，認為已經是有序排列
+    if len(array) <= 1:
+        return array
+    
+    else:
+        #宣告一個開頭節點，及其數值
+        pivot_index = begining
+        pivot = array[begining]
+        
+        #給出左右兩個指針
+        left = pivot_index + 1
+        right = end - 1
+        
+        #保證兩個迴圈的運行
+        while True:
+            
+            #左側指針不斷進行到下一個直到第一個大於基準點的值
+            while left <= right and array[left] < pivot:
+                left += 1
+            
+            #右側指針不斷進行到上一個直到第一個小於基準點的值
+            while right >= left and array[right] > pivot:
+                right -= 1
+            
+            #運行到左側指針超過右側指針也就是說指針所在數值已經是left<right的時候打破迴圈
+            if left > right:
+                break
+            
+            #把左側指針指向的數值和右側指針指向的數值位置互換
+            else:
+                array[left], array[right] = array[right], array[left]
+    
+    #完成一次排序之後把基準點放置到指定位置
+    array[pivot_index], array[right] = array[right], array[pivot_index]
+    
+    return right, pivot
 
+def qs(array, begining, end):
+    
+    #只要沒有切分到開頭就是結尾（也就是說只有最後一個元素）就循環進行上述過程
+    if begining < end:
+        right, pivot = partition(array, begining, end)
+        
+        #運行左側部分
+        qs(array, begining, right)
+        
+        #運行右側部分
+        qs(array, right + 1,end)
+    return array
+list_example = [20, 3, 0, 35, 8, 23, 15, 28, 7, 32]
+qs(list_example, 0, 10)
+```
+
+#### QuickSort_Inplace
