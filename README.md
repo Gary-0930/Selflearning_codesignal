@@ -126,6 +126,7 @@ print(list(b1))
 3. 遞迴排序子序列：遞迴地將小於基準值元素的子序列和大於基準值元素的子序列排序。<br>
 #### QuickSort
 
+這種方式思路清晰簡單，銷量數據運行速度較快，缺點是會佔用到外部空間
 ```python
 def quicksort(list):
     #長度不足2默認是已有順序的list
@@ -156,7 +157,7 @@ def quicksort(list):
 
 #### QuickSort_Inplace
 
-
+這種方法不會用到外部空間，會在內部直接完成元素互換位置，大量數據運算的時候會比較實用
 ```python
 def partition(array, begining, end):
     #如果資料長度不足2，認為已經是有序排列
