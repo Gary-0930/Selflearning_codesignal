@@ -126,6 +126,34 @@ print(list(b1))
 3. 遞迴排序子序列：遞迴地將小於基準值元素的子序列和大於基準值元素的子序列排序。<br>
 #### QuickSort
 
+```python
+def quicksort(list):
+    #長度不足2默認是已有順序的list
+    if len(list) <= 1:
+        return list
+    else:
+        #指定第一個數值為基準點
+        pivot = list[0]
+        #預留左側欄位
+        left = []
+        #預留右側欄位
+        right = []
+        #留出基準點的空間
+        pivot_list = []
+        
+        #小於基準點的放在左側，大於基準點的放在右側，相同的就放在基準點
+        for i in list:
+            if i < pivot:
+                left.append(i)
+            elif i > pivot:
+                right.append(i)
+            else:
+                pivot_list.append(i)
+        
+        #合併整合基左側、基準點、右側，並且重複呼叫quicksort循環進行
+        return quicksort(left) + pivot_list + quicksort(right)
+```
+
 #### QuickSort_Inplace
 
 
