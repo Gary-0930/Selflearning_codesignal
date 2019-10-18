@@ -19,8 +19,8 @@
 ---------------
 ## Python語法
 ### list語法 
-
-remove用法
+	
+	* **remove用法**
 ```python
 a = [1, 3, 5, 3, 7]
 a.remove(3) #remove只會刪除括號內第一個出現的指定的數值
