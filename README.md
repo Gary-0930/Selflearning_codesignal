@@ -154,6 +154,7 @@ def quicksort(list):
         #合併整合基左側、基準點、右側，並且重複呼叫quicksort循環進行
         return quicksort(left) + pivot_list + quicksort(right)
 ```
+[思維流程導圖](https://github.com/Gary-0930/Selflearning_codesignal/blob/master/HomeWork/QuickSort.png "quicksort")<br>
 
 #### QuickSort_Inplace
 
