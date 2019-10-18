@@ -213,4 +213,4 @@ def qs(array, begining, end):
 list_example = [20, 3, 0, 35, 8, 23, 15, 28, 7, 32]
 qs(list_example, 0, 10)
 ```
-
+[思維流程導圖](https://github.com/Gary-0930/Selflearning_codesignal/blob/master/HomeWork/QuickSort_Inplace.png "quicksort_inplace")
