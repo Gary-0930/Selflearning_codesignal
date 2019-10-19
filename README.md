@@ -20,7 +20,7 @@
 ## Python語法
 ### list語法 
 	
-	* **remove用法**
+**remove用法**
 ```python
 a = [1, 3, 5, 3, 7]
 a.remove(3) #remove只會刪除括號內第一個出現的指定的數值
@@ -28,7 +28,8 @@ a
 ```
 回傳結果a會變成[1, 5, 3, 7]
 
-pop用法
+
+**pop用法**
 ```python
 b = [1, 2, 3, 1, 2, 3]
 b.pop(2) #pop會回傳位於括號內的數值，並且刪除該數值，如果括號內為空，刪除並回傳最後一個數值
@@ -40,7 +41,7 @@ list小技巧：<br>
 
 ### for迴圈語法
 
-for用法一
+**for用法一**
 ```python
 val = 3
 nums = [3, 2, 2, 3]
@@ -51,7 +52,7 @@ print(len(nums))
 ```
 回傳結果為 2
 
-for用法二
+**for用法二**
 ```python
 val = 3
 nums = [3, 2, 2, 3]
@@ -92,12 +93,10 @@ print(list(b1))
 |元素資料型態|必須相同|可以不同|
 |效率|較高|較低|
 
-
-
 -----
 ## Esclipse(Java)語法
 ### Print相關介紹
-  * **println**
+**println**
 java中print語法與python不同，如果想要使用java的print功能，需要先呼叫系統中內建的功能System.out.println，ln代表print之後換行
 ```java
 public class A1 {
@@ -108,7 +107,21 @@ public class A1 {
 	}
 }
 ```
+**printf**
+```java
+public class A2 {
 
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		double pi = 3.14159;
+		double radius = 6.5;
+		double perimeter = 2 * pi * radius;
+		double area = radius * radius * pi;
+		System.out.printf("Perimeter = %.2f\n",perimeter);
+		System.out.printf("Area = %.2f\n", area);
+	}
+}
+```
 
 -----
 ## R語言
