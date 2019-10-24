@@ -12,9 +12,12 @@
 >* [GitHub使用方法](#GitHub使用方法)
 >* [LeeCode練習筆記](#LeeCode練習筆記)
 >* [HomeWork](#HomeWork)
->   * [快速排序法](#快速排序法)
+>   * [快速排序法 QuickSort](#快速排序法)
 >     * [Quick Sort](#QuickSort)
 >     * [Quick Sort Inplace](#QuickSort_Inplace)
+
+
+>   * [堆疊排序法](#堆疊排序法)
 
 ---------------
 ## Python語法
@@ -240,3 +243,12 @@ list_example = [20, 3, 0, 35, 8, 23, 15, 28, 7, 32]
 qs(list_example, 0, 10)
 ```
 [思維流程導圖](https://github.com/Gary-0930/Selflearning_codesignal/blob/master/HomeWork/QuickSort_Inplace.png "quicksort_inplace")
+
+### 堆疊排序法
+#### 二元樹介紹
+樹的概念就是每一棵樹都有樹根，這個數根稱為跟節點（root），樹根之下會有樹的樹枝，擁有0～n個子節點（children）<br>
+n元樹的概念就是一個節點最多可以有n個子節點，所以二元樹最多只能有兩個子節點<br>
+
+* 跟節點：沒有父節點的節點是跟節點<br>
+* 葉節點：沒有子節點的節點是跟節點<br>
+* 祖先節點：某節點到跟節點之間所經過的所有節點，都是此節點的祖先節點<br>
