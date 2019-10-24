@@ -100,6 +100,7 @@ print(list(b1))
 ## Esclipse(Java)語法
 ### Print相關介紹
 **println**
+
 java中print語法與python不同，如果想要使用java的print功能，需要先呼叫系統中內建的功能System.out.println，ln代表print之後換行
 ```java
 public class A1 {
