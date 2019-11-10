@@ -5,13 +5,13 @@
 
 
 class Solution(object):
-    def mergesort(self, arr):  
+    def merge_sort(self, arr):  
         if len(arr) > 1:
             mid = len(arr) // 2
             left = arr[:mid]
             right = arr[mid:]
-            Solution().mergesort(left)  ##重複分解左右兩側
-            Solution().mergesort(right)
+            Solution().merge_sort(left)  ##重複分解左右兩側
+            Solution().merge_sort(right)
         
             index = 0
             i = 0
