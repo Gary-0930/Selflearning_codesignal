@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[7]:
+# In[8]:
 
 
 class TreeNode(object):
@@ -96,10 +96,10 @@ class Solution(object):
         :type target: int
         :rtype: TreeNode(searched node)
         """
-        if root:
-            if root.val is target:
+        if root is not None:
+            if root.val == target:
                 return root
-            if root.left:
+            if root.left is not None:
                 temp = self.search(root.left, target)
                 if temp is not None:
                     return temp
@@ -168,4 +168,15 @@ class Solution(object):
         m = [[""] * w for _ in range(h)]
         fill(root, 0, 0, w - 1)
         return m
+
+
+# In[ ]:
+
+
+'''參考網站：
+https://emn178.pixnet.net/blog/post/94574434-資料結構---二元搜索樹%28binary-search-tree%29
+
+https://r.search.yahoo.com/_ylt=AwrtaiDjxdZd7gMAbB2X2At.;_ylu=X3oDMTBybTNvcjlkBGNvbG8DdHcxBHBvcwMyBHZ0aWQDBHNlYwNzcg--/RV=2/RE=1574385251/RO=10/RU=http%3a%2f%2fsquall.cs.ntou.edu.tw%2fcpp%2f103spring%2flabtest%2ftest1%2fBinarySearchTree.html/RK=2/RS=2ztmof0zqQOAQDQr70LowdDS6n4-
+
+https://r.search.yahoo.com/_ylt=AwrtaiDjxdZd7gMAbx2X2At.;_ylu=X3oDMTBya2hyZXZkBGNvbG8DdHcxBHBvcwMzBHZ0aWQDBHNlYwNzcg--/RV=2/RE=1574385251/RO=10/RU=http%3a%2f%2fwww.csie.ntnu.edu.tw%2f~u91029%2fOrder.html/RK=2/RS=7swnz9Ss_CA94DmaFn5kXfpLRUQ-'''
 
