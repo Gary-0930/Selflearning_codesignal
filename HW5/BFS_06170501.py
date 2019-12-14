@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[15]:
+# In[2]:
 
 
 from collections import defaultdict 
@@ -46,36 +46,4 @@ class Graph:
             return visited
         else:
             print("Wrong start")
-
-
-# In[16]:
-
-
-g = Graph()
-g.addEdge(0,1)
-g.addEdge(0,2)
-g.addEdge(1,2)
-g.addEdge(2,0)
-g.addEdge(2,3)
-g.addEdge(3,3)
-g.addEdge(4,4)
-print(g.graph)
-
-
-# In[17]:
-
-
-g.BFS(2)
-
-
-# In[18]:
-
-
-g.DFS(2)
-
-
-# In[ ]:
-
-
-
 
